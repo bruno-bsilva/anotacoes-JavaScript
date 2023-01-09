@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Meu primeiro JavaScript</title>
+    <style>
+        body{
+            background-color: aqua;
+        }
+        h1{
+            text-align: center;
+        }
+    </style>            
+</head> 
+<body>
+    <h1>JavaScript</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio assumenda, est dolore eaque, neque corporis impedit magnam ipsum natus voluptatibus facilis consequuntur! Voluptatum ipsa quibusdam consectetur molestiae! Expedita, quisquam nostrum?</p>
+    <script>
+        var n1 = Number(window.prompt("Digite um número"))
+        var n2 = Number(window.prompt("Digite mais um número"))
+        var soma = n1 + n2
+        window.alert("A soma dos valores é " + soma)
+
+        /*
+        para converter um num para string basta usr o comando string(o que eu quero converter) ou n.toString
+        document.write(soma.toLocaleString('pt-br',{style:currency, currency:'Brl'})) tranforma o valor em dinheiro
+
+
+        auto-atribuição: n = n + 1 => n += 1 
+        incremento: n = n + 1 => n++ ou ++n (só funciona se for 1) 
+    
+
+      
+        opreador ternário: media > 7? 'aprovado' : 'reprovado'
+        */
+    </script>
+</body>   
+</html>
