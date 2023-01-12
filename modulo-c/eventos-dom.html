@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM</title>
+    <style>
+        div#area{
+            margin: justify;
+            font:normal 20pt arial;
+            background-color: aquamarine;
+            color:orange ;
+            height:200px;
+            width: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="area" onmouseenter ="entrar()" onclick="clicar()" onmouseout = "sair()">
+        Interaja
+    </div>
+
+    <script>
+         var area = document.getElementById("area")
+        function clicar(){   
+            area.innerText = "clicou"
+        }
+        function entrar() {
+           area.style.backgroundColor = "red"
+        }
+        function sair(){
+            area.style.backgroundColor = "aquamarine"
+        }
+        /*para não poluir o html, use listeners
+        area.addEventListener("click", clicar)
+        */
+        
+    </script>
+    
+</body>    
+</html>

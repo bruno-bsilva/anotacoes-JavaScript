@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>DOM</title>
+    <style>
+        body{
+            background-color: aquamarine;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com o Dom</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM </strong>em JavaScript</p>
+    <div id="msg">Clique aqui</div>
+
+    <script>
+        var corpo = document.body
+        var p1 = document.getElementsByTagName("p")[0]
+        document.writeln(p1.innerText)
+        corpo.style.background = "pink"
+        var mensagem = document.getElementById("msg")
+        document.writeln(mensagem.innerHTML)
+
+    var b = document.querySelector("div#msg")
+    b.style.color = "green"
+        
+     
+
+
+    </script>
+    
+</body>    
+</html>
